@@ -1,11 +1,11 @@
 <?php
 /**
  *
- *   AKÖde POS adına Alttantire Yazılım Çözümleri tarafından geliştirilmiştir.
- *   Tüm hakları AKÖde POS'a aittir.
+ *   AKÖde POS Alttantire Yazılım Çözümleri tarafından geliştirilmiştir.
+
  *
  * @author      Alttantire Yazılım Çözümleri <info@alttantire.com>
- * @site        <https//akodepos.com/>
+ * @site        <https//alttantire.com/>
  * @date        2022
  *
  */

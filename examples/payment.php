@@ -1,11 +1,11 @@
 <?php
 /**
  *
- *   AKÖde POS adına Alttantire Yazılım Çözümleri tarafından geliştirilmiştir.
- *   Tüm hakları AKÖde POS'a aittir.
+ *   AKÖde POS Alttantire Yazılım Çözümleri tarafından geliştirilmiştir.
+
  *
  * @author      Alttantire Yazılım Çözümleri <info@alttantire.com>
- * @site        <https//akodepos.com/>
+ * @site        <https//alttantire.com/>
  * @date        2022
  *
  */
@@ -13,10 +13,21 @@
 include "../src/Gateway.php";
 
 //### Sanal POS Üye İşyeri Ayarları
-$apiUser = "Entegrasyon_01"; // Api kullanıcı adınız
-$clientId = "1000000032"; // Api müşteri numaranız
-$apiPass = "gkk4l2*TY112"; // Api şifreniz
-$environment = "TEST"; // "LIVE" - Gerçek ortam | "TEST" - Test ortam
+/*
+ * apiUser: SMS ile iletilen ApiUser bilgisi
+ * clientId: SMS ile iletilen clientId bilgisi
+ * apiPass: SMS ile iletilen apiPass bilgisi
+ *
+ * Environment:
+ *
+ *  ** "LIVE" = "https://api.akodepos.com/api/Payment/"
+ *  ** "TEST" = "https://ent.akodepos.com/api/Payment/"
+ */
+
+$apiUser = "POS_ENT_Test_001"; // Api kullanıcı adınız
+$clientId = "1000000494"; // Api müşteri numaranız
+$apiPass = "POS_ENT_Test_001!*!*"; // Api şifreniz
+$environment = "https://ent.akodepos.com/api/Payment/";
 
 //### API Gateway
 $gateway = new Gateway($environment, $clientId, $apiUser, $apiPass);
@@ -47,7 +58,7 @@ if($_POST){
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>AKÖde Non 3D Ödeme - Örnek</title>
+    <title>AKÖde POS Non 3D Ödeme - Örnek</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>

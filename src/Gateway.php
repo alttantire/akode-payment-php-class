@@ -11,6 +11,8 @@
  *
  */
 
+date_default_timezone_set("Europe/Istanbul");
+
 class Gateway
 {
 
@@ -22,18 +24,15 @@ class Gateway
     protected $timeSpan;
     protected $httpClient;
     protected $container;
-    protected $url = "https://payment.testdgpf.dgpaysit.com/api/Payment/";
+    protected $url = "";
     protected $postdata = []; //default
 
-    public function __construct($environment, $clientId, $apiUser, $apiPass)
+    public function __construct($apiUrl, $clientId, $apiUser, $apiPass)
     {
         $this->clientId = $clientId;
         $this->apiUser = $apiUser;
         $this->apiPass = $apiPass;
-
-        if ($environment == "LIVE") {
-            $this->url = "https://api.akodepos.com/api/Payment/";
-        }
+        $this->url = $apiUrl;
 
         $this->init();
     }

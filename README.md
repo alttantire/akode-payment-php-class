@@ -17,11 +17,21 @@ API çağrıları için aşağıdaki metodları kullanabilirsiniz.
 include "src/Gateway.php";
 
 //### Sanal POS Üye İşyeri Ayarları
-$apiUser = "Entegrasyon_01"; // Api kullanıcı adınız
-$clientId = "1000000032"; // Api müşteri numaranız
-$apiPass = "gkk4l2*TY112"; // Api şifreniz
-$environment = "TEST"; // "LIVE" - Gerçek ortam | "TEST" - Test ortam
-$callback_url = "https://www.orneksitesadresiniz.com/payment-response.php";
+/*
+ * apiUser: SMS ile iletilen ApiUser bilgisi
+ * clientId: SMS ile iletilen clientId bilgisi
+ * apiPass: SMS ile iletilen apiPass bilgisi
+ *
+ * Environment:
+ *
+ *  ** "LIVE" = "https://api.akodepos.com/api/Payment/"
+ *  ** "TEST" = "https://ent.akodepos.com/api/Payment/"
+ */
+
+$apiUser = "POS_ENT_Test_001"; // Api kullanıcı adınız
+$clientId = "1000000494"; // Api müşteri numaranız
+$apiPass = "POS_ENT_Test_001!*!*"; // Api şifreniz
+$environment = "https://ent.akodepos.com/api/Payment/";
 
 //### Sipariş Bilgileri
 $orderId = ""; // Sipariş numarası her sipariş için tekil olmalıdır. Boş bırakıldığında sistem tarafından otomatik üretilir
@@ -67,11 +77,21 @@ $form_post_url = $gateway->getFormUrl();
 include "src/Gateway.php";
 
 //### Sanal POS Üye İşyeri Ayarları
-$apiUser = "Entegrasyon_01"; // Api kullanıcı adınız
-$clientId = "1000000032"; // Api müşteri numaranız
-$apiPass = "gkk4l2*TY112"; // Api şifreniz
-$environment = "TEST"; // "LIVE" - Gerçek ortam | "TEST" - Test ortam
-$callback_url = "https://www.orneksitesadresiniz.com/payment-response.php";
+/*
+ * apiUser: SMS ile iletilen ApiUser bilgisi
+ * clientId: SMS ile iletilen clientId bilgisi
+ * apiPass: SMS ile iletilen apiPass bilgisi
+ *
+ * Environment:
+ *
+ *  ** "LIVE" = "https://api.akodepos.com/api/Payment/"
+ *  ** "TEST" = "https://ent.akodepos.com/api/Payment/"
+ */
+
+$apiUser = "POS_ENT_Test_001"; // Api kullanıcı adınız
+$clientId = "1000000494"; // Api müşteri numaranız
+$apiPass = "POS_ENT_Test_001!*!*"; // Api şifreniz
+$environment = "https://ent.akodepos.com/api/Payment/";
 
 //### Sipariş Bilgileri
 $orderId = ""; // Sipariş numarası her sipariş için tekil olmalıdır. Boş bırakıldığında sistem tarafından otomatik üretilir
@@ -102,11 +122,21 @@ $iframe_url = $gateway->getFrameUrl($payment->ThreeDSessionId);
 include "src/Gateway.php";
 
 //### Sanal POS Üye İşyeri Ayarları
-$apiUser = "Entegrasyon_01"; // Api kullanıcı adınız
-$clientId = "1000000032"; // Api müşteri numaranız
-$apiPass = "gkk4l2*TY112"; // Api şifreniz
-$environment = "TEST"; // "LIVE" - Gerçek ortam | "TEST" - Test ortam
-$callback_url = "https://www.orneksitesadresiniz.com/payment-response.php";
+/*
+ * apiUser: SMS ile iletilen ApiUser bilgisi
+ * clientId: SMS ile iletilen clientId bilgisi
+ * apiPass: SMS ile iletilen apiPass bilgisi
+ *
+ * Environment:
+ *
+ *  ** "LIVE" = "https://api.akodepos.com/api/Payment/"
+ *  ** "TEST" = "https://ent.akodepos.com/api/Payment/"
+ */
+
+$apiUser = "POS_ENT_Test_001"; // Api kullanıcı adınız
+$clientId = "1000000494"; // Api müşteri numaranız
+$apiPass = "POS_ENT_Test_001!*!*"; // Api şifreniz
+$environment = "https://ent.akodepos.com/api/Payment/";
 
 //### Sipariş Bilgileri
 $orderId = "20221011999"; // Sipariş numarası
@@ -126,10 +156,21 @@ print_r($paymentCheck);
 include "src/Gateway.php";
 
 //### Sanal POS Üye İşyeri Ayarları
-$apiUser = "Entegrasyon_01"; // Api kullanıcı adınız
-$clientId = "1000000032"; // Api müşteri numaranız
-$apiPass = "gkk4l2*TY112"; // Api şifreniz
-$environment = "TEST"; // "LIVE" - Gerçek ortam | "TEST" - Test ortam
+/*
+ * apiUser: SMS ile iletilen ApiUser bilgisi
+ * clientId: SMS ile iletilen clientId bilgisi
+ * apiPass: SMS ile iletilen apiPass bilgisi
+ *
+ * Environment:
+ *
+ *  ** "LIVE" = "https://api.akodepos.com/api/Payment/"
+ *  ** "TEST" = "https://ent.akodepos.com/api/Payment/"
+ */
+
+$apiUser = "POS_ENT_Test_001"; // Api kullanıcı adınız
+$clientId = "1000000494"; // Api müşteri numaranız
+$apiPass = "POS_ENT_Test_001!*!*"; // Api şifreniz
+$environment = "https://ent.akodepos.com/api/Payment/";
 
 //### API Gateway
 $gateway = new Gateway($environment, $clientId, $apiUser, $apiPass);
@@ -163,10 +204,21 @@ print_r($paymentCheck);
 include "src/Gateway.php";
 
 //### Sanal POS Üye İşyeri Ayarları
-$apiUser = "Entegrasyon_01"; // Api kullanıcı adınız
-$clientId = "1000000032"; // Api müşteri numaranız
-$apiPass = "gkk4l2*TY112"; // Api şifreniz
-$environment = "TEST"; // "LIVE" - Gerçek ortam | "TEST" - Test ortam
+/*
+ * apiUser: SMS ile iletilen ApiUser bilgisi
+ * clientId: SMS ile iletilen clientId bilgisi
+ * apiPass: SMS ile iletilen apiPass bilgisi
+ *
+ * Environment:
+ *
+ *  ** "LIVE" = "https://api.akodepos.com/api/Payment/"
+ *  ** "TEST" = "https://ent.akodepos.com/api/Payment/"
+ */
+
+$apiUser = "POS_ENT_Test_001"; // Api kullanıcı adınız
+$clientId = "1000000494"; // Api müşteri numaranız
+$apiPass = "POS_ENT_Test_001!*!*"; // Api şifreniz
+$environment = "https://ent.akodepos.com/api/Payment/";
 
 //### Sipariş Bilgileri
 $orderId = "20221011999"; // Sipariş numarası
@@ -185,10 +237,21 @@ print_r($paymentCheck);
 include "src/Gateway.php";
 
 //### Sanal POS Üye İşyeri Ayarları
-$apiUser = "Entegrasyon_01"; // Api kullanıcı adınız
-$clientId = "1000000032"; // Api müşteri numaranız
-$apiPass = "gkk4l2*TY112"; // Api şifreniz
-$environment = "TEST"; // "LIVE" - Gerçek ortam | "TEST" - Test ortam
+/*
+ * apiUser: SMS ile iletilen ApiUser bilgisi
+ * clientId: SMS ile iletilen clientId bilgisi
+ * apiPass: SMS ile iletilen apiPass bilgisi
+ *
+ * Environment:
+ *
+ *  ** "LIVE" = "https://api.akodepos.com/api/Payment/"
+ *  ** "TEST" = "https://ent.akodepos.com/api/Payment/"
+ */
+
+$apiUser = "POS_ENT_Test_001"; // Api kullanıcı adınız
+$clientId = "1000000494"; // Api müşteri numaranız
+$apiPass = "POS_ENT_Test_001!*!*"; // Api şifreniz
+$environment = "https://ent.akodepos.com/api/Payment/";
 
 //### Sipariş Bilgileri
 $orderId = "202210109"; // Sipariş numarası
@@ -208,10 +271,21 @@ print_r($paymentCheck);
 include "src/Gateway.php";
 
 //### Sanal POS Üye İşyeri Ayarları
-$apiUser = "Entegrasyon_01"; // Api kullanıcı adınız
-$clientId = "1000000032"; // Api müşteri numaranız
-$apiPass = "gkk4l2*TY112"; // Api şifreniz
-$environment = "TEST"; // "LIVE" - Gerçek ortam | "TEST" - Test ortam
+/*
+ * apiUser: SMS ile iletilen ApiUser bilgisi
+ * clientId: SMS ile iletilen clientId bilgisi
+ * apiPass: SMS ile iletilen apiPass bilgisi
+ *
+ * Environment:
+ *
+ *  ** "LIVE" = "https://api.akodepos.com/api/Payment/"
+ *  ** "TEST" = "https://ent.akodepos.com/api/Payment/"
+ */
+
+$apiUser = "POS_ENT_Test_001"; // Api kullanıcı adınız
+$clientId = "1000000494"; // Api müşteri numaranız
+$apiPass = "POS_ENT_Test_001!*!*"; // Api şifreniz
+$environment = "https://ent.akodepos.com/api/Payment/";
 
 //### API Gateway
 $gateway = new Gateway($environment, $clientId, $apiUser, $apiPass);
@@ -241,10 +315,21 @@ try {
 include "src/Gateway.php";
 
 //### Sanal POS Üye İşyeri Ayarları
-$apiUser = "Entegrasyon_01"; // Api kullanıcı adınız
-$clientId = "1000000032"; // Api müşteri numaranız
-$apiPass = "gkk4l2*TY112"; // Api şifreniz
-$environment = "TEST"; // "LIVE" - Gerçek ortam | "TEST" - Test ortam
+/*
+ * apiUser: SMS ile iletilen ApiUser bilgisi
+ * clientId: SMS ile iletilen clientId bilgisi
+ * apiPass: SMS ile iletilen apiPass bilgisi
+ *
+ * Environment:
+ *
+ *  ** "LIVE" = "https://api.akodepos.com/api/Payment/"
+ *  ** "TEST" = "https://ent.akodepos.com/api/Payment/"
+ */
+
+$apiUser = "POS_ENT_Test_001"; // Api kullanıcı adınız
+$clientId = "1000000494"; // Api müşteri numaranız
+$apiPass = "POS_ENT_Test_001!*!*"; // Api şifreniz
+$environment = "https://ent.akodepos.com/api/Payment/";
 
 //### API Gateway
 $gateway = new Gateway($environment, $clientId, $apiUser, $apiPass);
